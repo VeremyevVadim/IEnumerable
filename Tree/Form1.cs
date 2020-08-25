@@ -16,7 +16,6 @@ namespace Tree
             Tree = new BinaryTree();
             Tree.Root = Tree;
             InitializeComponent();
-
         }
 
         // Вывод дерева
@@ -78,6 +77,11 @@ namespace Tree
         public static void WriteInLog(string text)
         {
             TreeForm.Log_TxBx.AppendText($"{text}\r\n");
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
